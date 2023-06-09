@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="top-bar">
+            <div>
+                <span class="page-name">Invoices</span>
+            </div>
+            <div class="buttons">
+                <span class="export-btn btn">Export</span>
+                <span class="new-btn">New</span>
+                <span class="filter-btn btn"></span>
+                <span class="more-btn btn"></span>
+            </div>
+        </div>
+        <div class="cols">
+            <div class="L-col">
+                <div class="page-row">
+                    <div class="l-page-row">
+                        <span class="page-text">Results per page</span>
+                        <select class="page-select" name="" id="">
+                            <option value="">1</option>
+                        </select>
+                    </div>
+                    <div class="m-page-row">
+                        <span class="prev-page"></span>
+                        <span class="active-page">1</span>
+                        <span class="next-page"></span>
+                    </div>
+                    <div class="r-page-row">
+                        <span class="page-text">Page</span>
+                        <select class="page-select" name="" id="">
+                            <option value="">20</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="table">
+                    <table>
+                        <tr class="table-header-row">
+                          <th class="table-header">
+                            <input type="checkbox">
+                          </th>
+                          <th class="table-header">Type</th>
+                          <th class="table-header">Date</th>
+                          <th class="table-header">Customer</th>
+                          <th class="table-header">Location</th>
+                          <th class="table-header">State</th>
+                          <th class="table-header">Total</th>
+                          <th class="table-header"></th>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input class="checkBox" type="checkbox">
+                          </td>
+                          <td>
+                            <p class="table-text"> Receipt </p> 
+                            <span class="small-text">#100048</span>
+                          </td>
+                          <td> 
+                            <p class="table-text"> 21.10.2022 </p>
+                            <span class="alert"> DUE 2 days ago </span>
+                          </td>
+                          <td> <p class="table-text"> Lydia Dias </p></td>
+                          <td> <p class="table-text"> Location #12 </p></td>
+                          <td> <p class="table-text state-progress"> in progress </p></td>
+                          <td> 
+                            <p class="table-text"> 129.00 € </p>
+                            <span class="alert"> Unpaid 200.29 € </span>
+                          </td>
+                          <td> <p class="table-text more-actions"></p></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <input class="checkBox" type="checkbox">
+                          </td>
+                          <td>
+                            <p class="table-text"> Receipt </p> 
+                            <span class="small-text">#100048</span>
+                          </td>
+                          <td> <p class="table-text"> 21.10.2022 </p> </td>
+                          <td> <p class="table-text"> Lydia Dias </p></td>
+                          <td> <p class="table-text"> Location #12 </p></td>
+                          <td> <p class="table-text state-pending"> Pending </p></td>
+                          <td> <p class="table-text"> 129.00 € </p></td>
+                          <td> <p class="table-text more-actions"></p></td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <input class="checkBox" type="checkbox">
+                          </td>
+                          <td>
+                            <p class="table-text"> Receipt </p> 
+                            <span class="small-text">#100048</span>
+                          </td>
+                          <td> 
+                            <p class="table-text"> 21.10.2022 </p> 
+                            <span class="alert"> DUE 2 days ago </span>
+                          </td>
+                          <td> <p class="table-text"> Lydia Dias </p></td>
+                          <td> <p class="table-text"> Location #12 </p></td>
+                          <td> <p class="table-text state-success"> Success </p></td>
+                          <td> 
+                            <p class="table-text"> 129.00 € </p>
+                            <span class="alert"> Unpaid 200.29 € </span>
+                          </td>
+                          <td> <p class="table-text more-actions"></p></td>
+                        </tr>
+
+
+                        <tr>
+                          <td>
+                            <input class="checkBox" type="checkbox">
+                          </td>
+                          <td>
+                            <p class="table-text"> Receipt </p> 
+                            <span class="small-text">#100048</span>
+                          </td>
+                          <td> <p class="table-text"> 21.10.2022 </p> </td>
+                          <td> <p class="table-text"> Lydia Dias </p></td>
+                          <td> <p class="table-text"> Location #12 </p></td>
+                          <td> <p class="table-text state-complete"> Complete </p></td>
+                          <td> <p class="table-text"> 129.00 € </p></td>
+                          <td> <p class="table-text more-actions"> </p></td>
+                        </tr>
+
+
+                        <tr class="checked">
+                          <td>
+                            <input class="checkBox" type="checkbox" checked>
+                          </td>
+                          <td>
+                            <p class="table-text"> Receipt </p> 
+                            <span class="small-text">#100048</span>
+                          </td>
+                          <td> <p class="table-text"> 21.10.2022 </p> </td>
+                          <td> <p class="table-text"> Lydia Dias </p></td>
+                          <td> <p class="table-text"> Location #12 </p></td>
+                          <td> <p class="table-text state-success"> Success </p></td>
+                          <td> <p class="table-text"> 129.00 € </p></td>
+                          <td> <p class="table-text more-actions"> </p></td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <input class="checkBox" type="checkbox">
+                          </td>
+                          <td>
+                            <p class="table-text"> Receipt </p> 
+                            <span class="small-text">#100048</span>
+                          </td>
+                          <td> <p class="table-text"> 21.10.2022 </p> </td>
+                          <td> <p class="table-text"> Lydia Dias </p></td>
+                          <td> <p class="table-text"> Location #12 </p></td>
+                          <td> <p class="table-text state-complete"> Complete </p></td>
+                          <td> <p class="table-text"> 129.00 € </p></td>
+                          <td> <p class="table-text more-actions"> </p></td>
+                        </tr>
+
+                        <tr class="checked">
+                          <td>
+                            <input class="checkBox" type="checkbox" checked>
+                          </td>
+                          <td>
+                            <p class="table-text"> Receipt </p> 
+                            <span class="small-text">#100048</span>
+                          </td>
+                          <td> <p class="table-text"> 21.10.2022 </p> </td>
+                          <td> <p class="table-text"> Lydia Dias </p></td>
+                          <td> <p class="table-text"> Location #12 </p></td>
+                          <td> <p class="table-text state-complete"> Complete </p></td>
+                          <td> <p class="table-text"> 129.00 € </p></td>
+                          <td> <p class="table-text more-actions"> </p></td>
+                        </tr>
+
+
+                      </table>
+                </div>
+            </div>
+            <div class="R-col">
+                <div class="R-top">
+                    <span class="col-name">Customers</span>
+                    <button class="col-action">Add</button>
+                </div>
+                <div class="r-filter">
+                    <div class="alphabeet">
+                      <span class="letter">A</span>
+                      <span class="letter">B</span>
+                      <span class="letter">C</span>
+                      <span class="letter">D</span>
+                      <span class="letter">E</span>
+                      <span class="letter">F</span>
+                      <span class="letter">G</span>
+                      <span class="letter">H</span>
+                      <span class="letter">I</span>
+                      <span class="letter">J</span>
+                      <span class="letter">K</span>
+                      <span class="letter">L</span>
+                      <span class="letter">M</span>
+                      <span class="letter">N</span>
+                      <span class="letter">O</span>
+                      <span class="letter">P</span>
+                      <span class="letter">Q</span>
+                      <span class="letter">R</span>
+                      <span class="letter">S</span>
+                      <span class="letter">T</span>
+                      <span class="letter">U</span>
+                      <span class="letter">V</span>
+                      <span class="letter">W</span>
+                      <span class="letter">X</span>
+                      <span class="letter">Y</span>
+                      <span class="letter">Z</span>
+                    </div>
+
+                    <div class="search">
+                      <input class="search-field" type="text">
+                      <button class="search-btn">Search</button>
+                    </div>
+                </div>
+                <div class="r-results">
+                  <ul>
+                    <ol class="result">Marathon Oil Corp.</ol>
+                    <ol class="result">Sealed Air</ol>
+                    <ol class="result">Southern Company</ol>
+                    <ol class="result">Atmos Energy</ol>
+                    <ol class="result">Equifax Inc.</ol>
+                    <ol class="result">Kansas City Southern</ol>
+                    <ol class="result">Fidelity National Information Services</ol>
+                    <ol class="result">Colgate-Palmolive</ol>
+                    <ol class="result">Air Products &amp; Chemicals Inc</ol>
+                    <ol class="result">Intuitive Surgical Inc.</ol>
+                    <ol class="result">Quest Diagnostics</ol>
+                    <ol class="result">Crown Castle International Corp.</ol>
+                    <ol class="result">News Corp. Class A</ol>
+                    <ol class="result">Federal Realty Investment Trust</ol>
+                    <ol class="result">Humana Inc.</ol>
+                  </ul>
+                  
+                </div>
+                <div class="window">
+                  <div class="window-row">
+                    <h3 class="window-header"> Add customers </h3>
+                    <span class="close"></span>
+                  </div>
+                    <p class="window-text">You can add customers by pessing the Add + button in the corner or by importing your clients from a CSV file</p>
+                    <button class="window-button"> Import customers </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
